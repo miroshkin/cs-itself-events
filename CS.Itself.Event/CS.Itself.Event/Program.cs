@@ -6,7 +6,15 @@ namespace CS.Itself.Event
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Titanic titanic = new Titanic();
+            Carpathia carpathia = new Carpathia();
+
+            titanic.SendSOS
+
+            titanic.PlayMusic();
+            titanic.ServeRichPassengers();
+            titanic.SendSOS();
+
         }
     }
 }
