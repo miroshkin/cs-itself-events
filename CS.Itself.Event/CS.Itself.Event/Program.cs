@@ -9,11 +9,12 @@ namespace CS.Itself.Event
             Titanic titanic = new Titanic();
             Carpathia carpathia = new Carpathia();
 
-            titanic.SendSOS
+            titanic.SomethingHappened += carpathia.SavePassengers;
 
             titanic.PlayMusic();
             titanic.ServeRichPassengers();
-            titanic.SendSOS();
+
+            titanic.OnSomethingHappened();
 
         }
     }

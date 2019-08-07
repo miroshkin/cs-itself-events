@@ -1,15 +1,14 @@
 ﻿using System;
 namespace CS.Itself.Event
 {
+    public delegate void SomethingHappened();
+
     public class Titanic
     {
 
-        public event  SOS;
 
-        public void SendSOS()
-        {
+        public event SomethingHappened SomethingHappened;
 
-        }
 
         public void ServeRichPassengers()
         {
@@ -19,6 +18,12 @@ namespace CS.Itself.Event
         public void PlayMusic()
         {
             Console.WriteLine("Play the jazz!");
+        }
+
+        public void OnSomethingHappened()
+        {
+            Console.WriteLine("SOS!");
+            SomethingHappened();
         }
     }
 }
