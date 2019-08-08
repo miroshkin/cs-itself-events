@@ -4,13 +4,10 @@ using System.Xml.Xsl;
 namespace CS.Itself.Event
 {
     public delegate void SomethingHappened();
-
     public delegate void SendMessage(object sender, MessageArgs args);
 
     public class Titanic
     {
-
-
         public event SomethingHappened SomethingHappened;
         public event SendMessage SendMessage;
 

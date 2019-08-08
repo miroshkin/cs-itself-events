@@ -11,8 +11,7 @@ namespace CS.Itself.Event
 
             titanic.SomethingHappened += carpathia.SavePassengers;
             titanic.SendMessage += carpathia.GetMessage;
-
-
+            
             titanic.PlayMusic();
             titanic.ServeRichPassengers();
 
