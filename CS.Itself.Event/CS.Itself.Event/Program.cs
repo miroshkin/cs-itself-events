@@ -10,6 +10,8 @@ namespace CS.Itself.Event
             Carpathia carpathia = new Carpathia();
 
             titanic.SomethingHappened += carpathia.SavePassengers;
+            titanic.SendMessage += carpathia.GetMessage;
+
 
             titanic.PlayMusic();
             titanic.ServeRichPassengers();
